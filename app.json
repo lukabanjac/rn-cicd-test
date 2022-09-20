@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "RN-CICD-TestApp",
+    "slug": "RN-CICD-TestApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "RN-CICD-TestApp"
+}
