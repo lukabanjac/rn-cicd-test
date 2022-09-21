@@ -26,3 +26,13 @@ jobs:
       - name: Run test
         run: |
           yarn test-ci
+
+      - name: App Center
+        uses: lukabanjac/AppCenter-Github-Action@v1.3.3
+        with:
+          appName: lukabanjac/RN-Test
+          token: ${{secrets.APP_CENTER_TOKEN}}
+          group: Testers
+          file: app/build/outputs/apk/release/app-release-unsigned.apk
+          notifyTesters: true
+          debug: false
