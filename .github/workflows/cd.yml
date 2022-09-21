@@ -6,7 +6,7 @@ on:
       - main
 
   jobs:
-    deploy:
+    build:
       - name: App Center
         uses: lukabanjac/AppCenter-Github-Action@v1.3.3
         with:
