@@ -7,12 +7,12 @@ on:
 
 jobs:
   build:
-    - name: App Center
-      uses: lukabanjac/AppCenter-Github-Action@v1.3.3
-      with:
-        appName: lukabanjac/RN-Test
-        token: ${{secrets.APP_CENTER_TOKEN}}
-        group: Testers
-        file: app/build/outputs/apk/release/app-release-unsigned.apk
-        notifyTesters: true
-        debug: false
+    name: App Center
+    uses: lukabanjac/AppCenter-Github-Action@v1.3.3
+    with:
+      appName: lukabanjac/RN-Test
+      token: ${{secrets.APP_CENTER_TOKEN}}
+      group: Testers
+      file: app/build/outputs/apk/release/app-release-unsigned.apk
+      notifyTesters: true
+      debug: false
