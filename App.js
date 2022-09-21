@@ -1,12 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, Image, View } from 'react-native';
+
+const IMAGE_URL = 'https://i.kym-cdn.com/entries/icons/original/000/034/772/Untitled-1.png'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>Test</Text>
+      <Image style={styles.image} source={IMAGE_URL}></Image>
     </View>
   );
 }
@@ -14,8 +15,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#fff', 
     alignItems: 'center',
     justifyContent: 'center',
+    width: '100%', 
+    marginTop: 10
+  },
+  image: {
+    width: 50,
+    height: 200,
+    resizeMode: 'stretch',
   },
 });
