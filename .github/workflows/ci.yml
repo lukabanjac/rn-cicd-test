@@ -27,6 +27,15 @@ jobs:
         run: |
           yarn test-ci
 
+name: Continuous Delivery
+
+on:
+  push:
+    branches:
+      - main
+
+  jobs:
+    deploy:
       - name: App Center
         uses: lukabanjac/AppCenter-Github-Action@v1.3.3
         with:
